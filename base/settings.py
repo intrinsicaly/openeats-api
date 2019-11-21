@@ -90,7 +90,12 @@ MIDDLEWARE = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'global_login_required.GlobalLoginRequiredMiddleware',
 )
+
+PUBLIC_PATHS = [
+    r'^/accounts/.*', # allow public access to all django-allauth views
+]
 
 INSTALLED_APPS = (
     'django.contrib.auth',
