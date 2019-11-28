@@ -93,6 +93,10 @@ MIDDLEWARE = (
     'global_login_required.GlobalLoginRequiredMiddleware',
 )
 
+PUBLIC_VIEWS = [
+    'django.contrib.auth.views.login',
+]
+
 PUBLIC_PATHS = [
     r'^/v1/accounts/.*', # allow public access to all django-allauth views
 ]
