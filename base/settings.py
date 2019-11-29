@@ -90,15 +90,23 @@ MIDDLEWARE = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'global_login_required.GlobalLoginRequiredMiddleware',
+    'login_required.middleware.LoginRequiredMiddleware',
 )
 
-PUBLIC_VIEWS = [
-    'django.contrib.auth.views.login',
+LOGIN_REQUIRED_IGNORE_PATHS = [
+    r'/accounts/logout/$'
+    r'/accounts/signup/$',
+    r'/admin/$',
+    r'/admin/login/$',
+    r'/about/$'
 ]
 
-PUBLIC_PATHS = [
-    r'^/api/v1/accounts/.*', # allow public access to all django-allauth views
+LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
+    'home',
+    'login',
+    'admin:index',
+    'admin:login',
+    'namespace:url_name',
 ]
 
 INSTALLED_APPS = (
