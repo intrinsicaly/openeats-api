@@ -98,7 +98,7 @@ PUBLIC_VIEWS = [
 ]
 
 PUBLIC_PATHS = [
-    r'^/v1/accounts/.*', # allow public access to all django-allauth views
+    r'^/api/v1/accounts/.*', # allow public access to all django-allauth views
 ]
 
 INSTALLED_APPS = (
