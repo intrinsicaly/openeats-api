@@ -90,24 +90,23 @@ MIDDLEWARE = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'login_required.middleware.LoginRequiredMiddleware',
+#    'login_required.middleware.LoginRequiredMiddleware',
 )
 
-LOGIN_REQUIRED_IGNORE_PATHS = [
-    r'/accounts/logout/$'
-    r'/accounts/signup/$',
-    r'/admin/$',
-    r'/admin/login/$',
-    r'/about/$'
-]
+#LOGIN_REQUIRED_IGNORE_PATHS = [
+#    r'/accounts/logout/$'
+#    r'/admin/$',
+#    r'/admin/login/$',
+#    r'/about/$'
+#]
 
-LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
-    'home',
-    'login',
-    'admin:index',
-    'admin:login',
-    'namespace:url_name',
-]
+#LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
+#    'home',
+#    'login',
+#    'admin:index',
+#    'admin:login',
+#    'namespace:url_name',
+#]
 
 INSTALLED_APPS = (
     'django.contrib.auth',
