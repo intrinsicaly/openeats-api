@@ -103,11 +103,11 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
 ]
 
 LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
-    'home',
+#    'home',
     'login',
     'admin:index',
     'admin:login',
-    'namespace:url_name',
+#    'namespace:url_name',
 ]
 
 INSTALLED_APPS = (
