@@ -96,6 +96,10 @@ MIDDLEWARE = (
 LOGIN_REQUIRED_IGNORE_PATHS = [
     r'/api/v1/accounts/logout/$'
     r'/api/v1/accounts/login/$'
+    r'/api/v1/accounts/obtain-auth-token/$'
+    r'/accounts/logout/$'
+    r'/accounts/login/$'
+    r'/accounts/obtain-auth-token/$'
     r'/accounts/$'
     r'/admin/$',
     r'/admin/login/$',
