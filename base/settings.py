@@ -116,7 +116,7 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
 #    r'v1/accounts/login/$',
 #    r'v1/accounts/obtain-auth-token/$',
 #    r'accounts/logout/$',
-#    r'accounts/login/$',
+    r'accounts/login/$',
 #    r'accounts/obtain-auth-token/$',
 #    r'accounts/$',
     r'login/$',
@@ -131,7 +131,7 @@ LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
     'login',
 #    'accounts:login',    
 #    'admin:index',
-#    'admin:login',
+    'admin:login',
 #    'namespace:url_name',
 ]
 
