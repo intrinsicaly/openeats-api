@@ -109,6 +109,21 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
     r'/admin/$',
     r'/admin/login/$',
     r'/about/$'
+    r'api/v1/accounts/logout/$'
+    r'api/v1/accounts/login/$'
+    r'api/v1/accounts/obtain-auth-token/$'
+    r'v1/accounts/logout/$'
+    r'v1/accounts/login/$'
+    r'v1/accounts/obtain-auth-token/$'
+    r'accounts/logout/$'
+    r'accounts/login/$'
+    r'accounts/obtain-auth-token/$'
+    r'accounts/$'
+    r'login/$'
+    r'obtain-auth-token/$'
+    r'admin/$',
+    r'admin/login/$',
+    r'about/$'
 ]
 
 LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
