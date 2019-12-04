@@ -104,6 +104,8 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
     r'/accounts/login/$'
     r'/accounts/obtain-auth-token/$'
     r'/accounts/$'
+    r'/login/$'
+    r'/obtain-auth-token/$'
     r'/admin/$',
     r'/admin/login/$',
     r'/about/$'
@@ -112,6 +114,7 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
 LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
 #    'home',
     'login',
+    'accounts:login'    
     'admin:index',
     'admin:login',
 #    'namespace:url_name',
