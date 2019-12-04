@@ -135,6 +135,8 @@ LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
 #    'namespace:url_name',
 ]
 
+LOGIN_URL = '/login/'
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
