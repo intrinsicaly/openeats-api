@@ -93,6 +93,8 @@ MIDDLEWARE = (
     'login_required.middleware.LoginRequiredMiddleware',
 )
 
+LOGIN_URL = '/api/v1/accounts/login/'
+
 LOGIN_REQUIRED_IGNORE_PATHS = [
     r'/api/v1/accounts/logout/$',
     r'/api/v1/accounts/login/$',
@@ -134,8 +136,6 @@ LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
 #    'admin:login',
 #    'namespace:url_name',
 ]
-
-LOGIN_URL = '/api/v1/accounts/login/'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
