@@ -106,7 +106,7 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
 #    r'/accounts/$',
 #    r'/login/$',
 #    r'/obtain-auth-token/$',
-#    r'/admin/$',
+    r'/admin/$',
     r'/admin/login/$',
 #    r'/about/$',
 #    r'api/v1/accounts/logout/$',
@@ -128,14 +128,14 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
 
 LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
 #    'home',
-    'login',
+#    'login',
 #    'accounts:login',    
 #    'admin:index',
-    'admin:login',
+#    'admin:login',
 #    'namespace:url_name',
 ]
 
-LOGIN_URL = '/login/'
+LOGIN_URL = '/api/v1/accounts/login/'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
