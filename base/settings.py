@@ -90,7 +90,7 @@ MIDDLEWARE = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'login_required.middleware.LoginRequiredMiddleware',
+    'api.base.ForceLoginMiddleware.LoginRequiredMiddleware'
 )
 
 LOGIN_URL = '/api/v1/accounts/login/'
