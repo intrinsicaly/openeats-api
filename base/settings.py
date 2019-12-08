@@ -93,9 +93,9 @@ MIDDLEWARE = (
     'api.base.ForceLoginMiddleware.LoginRequiredMiddleware'
 )
 
-LOGIN_URL = '/api/v1/accounts/login/'
+LOGIN_URL = '/login/'
 
-LOGIN_REQUIRED_IGNORE_PATHS = [
+LOGIN_EXEMPT_URLs = [
     r'/api/v1/accounts/logout/$',
     r'/api/v1/accounts/login/$',
     r'/api/v1/accounts/obtain-auth-token/$',
@@ -128,14 +128,14 @@ LOGIN_REQUIRED_IGNORE_PATHS = [
 #    r'about/$',
 ]
 
-LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
+#LOGIN_REQUIRED_IGNORE_VIEW_NAMES = [
 #    'home',
 #    'login',
 #    'accounts:login',    
 #    'admin:index',
 #    'admin:login',
 #    'namespace:url_name',
-]
+#]
 
 INSTALLED_APPS = (
     'django.contrib.auth',
