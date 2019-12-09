@@ -95,7 +95,7 @@ MIDDLEWARE = (
 
 LOGIN_URL = '/login/'
 
-LOGIN_EXEMPT_URLs = [
+LOGIN_EXEMPT_URLS = [
     r'/api/v1/accounts/logout/$',
     r'/api/v1/accounts/login/$',
     r'/api/v1/accounts/obtain-auth-token/$',
